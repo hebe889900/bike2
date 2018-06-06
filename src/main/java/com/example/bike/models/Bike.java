@@ -3,6 +3,7 @@ package com.example.bike.models;
 import java.math.BigDecimal;
 import java.sql.Date;
 
+@Entity
 public class Bike {
 	private String name;
 	private String email;
