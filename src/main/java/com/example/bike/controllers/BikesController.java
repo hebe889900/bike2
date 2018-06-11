@@ -24,20 +24,19 @@ public class BikesController {
 	
 	@GetMapping
 	public List<Bike> list() {
-		List<Bike> bikes = new ArrayList<>();
-		return bikes;
+		return bikeRepository.findAll();
 	}
 	
 	
 	@PostMapping
 	@ResponseStatus(HttpStatus.OK)
 	public void create(@RequestBody Bike bike) {
-		
+		bikeRepository.save(bike);
 	}
 	
 	@GetMapping("/{id}")
 	public Bike get(@PathVariable("id") long id) {
-		return new Bike();
+		return bikeRepository.getOne(id);
 	}
 
 }
