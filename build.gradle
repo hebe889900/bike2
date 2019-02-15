@@ -21,8 +21,8 @@ dependencies {
     compile 'com.zsoltfabok:sqlite-dialect:1.0'
     compile 'org.seleniumhq.selenium:selenium-java:2.47.1'
     testCompile 'org.springframework.boot:spring-boot-starter-test:2.0.2.RELEASE'
-    testCompile 'info.cukes:cucumber-java:1.0.2'
-    testCompile 'info.cukes:cucumber-junit:1.0.2'
+    testCompile 'io.cucumber:cucumber-java8:4.2.0'
+    testCompile 'io.cucumber:cucumber-junit:4.2.0'
     testCompile 'junit:junit:4.10'
 }
 
